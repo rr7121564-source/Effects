@@ -1,0 +1,135 @@
+.class public abstract Lq8/i;
+.super Ljava/lang/Object;
+
+
+# instance fields
+.field private final a:Lb7/h;
+
+.field private b:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance v0, Lb7/h;
+
+    invoke-direct {v0}, Lb7/h;-><init>()V
+
+    iput-object v0, p0, Lq8/i;->a:Lb7/h;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected final a([C)V
+    .locals 2
+
+    const-string v0, "array"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    monitor-enter p0
+
+    :try_start_0
+    iget v0, p0, Lq8/i;->b:I
+
+    array-length v1, p1
+
+    add-int/2addr v0, v1
+
+    invoke-static {}, Lq8/e;->a()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_0
+
+    iget v0, p0, Lq8/i;->b:I
+
+    array-length v1, p1
+
+    add-int/2addr v0, v1
+
+    iput v0, p0, Lq8/i;->b:I
+
+    iget-object v0, p0, Lq8/i;->a:Lb7/h;
+
+    invoke-virtual {v0, p1}, Lb7/h;->addLast(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    sget-object p1, La7/e0;->a:La7/e0;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    return-void
+
+    :goto_1
+    monitor-exit p0
+
+    throw p1
+.end method
+
+.method protected final b(I)[C
+    .locals 3
+
+    monitor-enter p0
+
+    :try_start_0
+    iget-object v0, p0, Lq8/i;->a:Lb7/h;
+
+    invoke-virtual {v0}, Lb7/h;->B()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [C
+
+    if-eqz v0, :cond_0
+
+    iget v1, p0, Lq8/i;->b:I
+
+    array-length v2, v0
+
+    sub-int/2addr v1, v2
+
+    iput v1, p0, Lq8/i;->b:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    monitor-exit p0
+
+    if-nez v0, :cond_1
+
+    new-array v0, p1, [C
+
+    :cond_1
+    return-object v0
+
+    :goto_1
+    monitor-exit p0
+
+    throw p1
+.end method

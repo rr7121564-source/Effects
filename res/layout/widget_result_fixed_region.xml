@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_gravity="center"
+    android:paddingLeft="5.0dip"
+    android:paddingBottom="6.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="18.0dip"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/widget_result_region_tv_text"
+        android:paddingLeft="3.0dip"
+        android:paddingRight="3.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:text="This is sample text\nThis is sample text 2"
+        android:includeFontPadding="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="25.0dip"
+        android:layout_marginTop="-2.0dip"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@id/widget_result_region_iv_show_region"
+            android:background="@drawable/bg_effect_click"
+            android:padding="6.0dip"
+            android:layout_width="30.0dip"
+            android:layout_height="25.0dip"
+            android:src="@drawable/ic_crop_white"
+            android:alpha="0.6" />
+        <ImageView
+            android:id="@id/widget_result_region_iv_close"
+            android:background="@drawable/bg_effect_click"
+            android:padding="7.0dip"
+            android:layout_width="30.0dip"
+            android:layout_height="25.0dip"
+            android:src="@drawable/ic_close_white"
+            android:alpha="0.6" />
+    </LinearLayout>
+</RelativeLayout>

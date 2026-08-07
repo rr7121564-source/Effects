@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@id/widget_icon_ll_container_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-3.0dip">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <View
+                android:id="@id/widget_icon_v_top_left"
+                android:background="#ff818384"
+                android:layout_width="3.0dip"
+                android:layout_height="12.0dip"
+                android:rotation="50.0" />
+            <View
+                android:id="@id/widget_icon_v_top_right"
+                android:background="#ff818384"
+                android:layout_width="3.0dip"
+                android:layout_height="12.0dip"
+                android:rotation="-50.0"
+                android:layout_marginStart="4.5dip" />
+        </LinearLayout>
+        <ImageView
+            android:id="@id/widget_icon_iv_move"
+            android:paddingTop="1.0dip"
+            android:visibility="invisible"
+            android:layout_width="14.0dip"
+            android:layout_height="14.0dip"
+            android:layout_marginRight="3.0dip"
+            android:src="@drawable/ic_move"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/bg_shadow"
+        android:padding="1.5999756dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@id/widget_icon_rl_contain_icon"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip">
+            <View
+                android:id="@id/widget_icon_v_bg"
+                android:background="@drawable/bg_oval"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <ImageView
+                android:id="@id/floating_view_iv_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_floating_app" />
+            <ImageView
+                android:id="@id/floating_view_iv_stop"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_stop_auto" />
+            <View
+                android:background="@drawable/bg_shadow_top"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

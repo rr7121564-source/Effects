@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@id/wct_rl_container_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.recognize_text.translate.screen.domain.widgets.widget_main.CustomSpinner
+            android:id="@id/wcm_spinner"
+            android:background="@drawable/bg_language_spinner"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:foreground="@drawable/fg_efftect_9"
+            android:popupBackground="@color/cl_background_white_black" />
+        <ImageView
+            android:layout_width="10.0dip"
+            android:layout_height="10.0dip"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/ic_more_down"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

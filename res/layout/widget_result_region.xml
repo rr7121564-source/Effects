@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center|top"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_result_region"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/result_ll_contain_size"
+        android:layout_width="315.0dip"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/bg_title_result_region"
+            android:layout_width="fill_parent"
+            android:layout_height="28.0dip">
+            <com.recognize_text.translate.screen.domain.widgets.otherWidget.TouchLinerLayout
+                android:orientation="horizontal"
+                android:id="@id/ll_move"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:id="@id/img_restart"
+                    android:background="@drawable/effect_view_click_radius"
+                    android:padding="4.5dip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_setting_new"
+                    android:layout_weight="1.0" />
+                <ImageView
+                    android:id="@id/img_speak"
+                    android:background="@drawable/effect_view_click_radius"
+                    android:padding="3.0dip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_speaker_new"
+                    android:layout_weight="1.0" />
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:theme="@style/fontSemi"
+                        android:textSize="6.0dip"
+                        android:textColor="@color/cl_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11.0dip"
+                        android:layout_marginTop="11.0dip"
+                        android:text="S"
+                        android:includeFontPadding="false" />
+                    <ImageView
+                        android:id="@id/img_copy"
+                        android:background="@drawable/effect_view_click_radius"
+                        android:padding="4.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/ic_copy_new" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:theme="@style/fontSemi"
+                        android:textSize="6.0dip"
+                        android:textColor="@color/cl_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11.0dip"
+                        android:layout_marginTop="11.0dip"
+                        android:text="T"
+                        android:includeFontPadding="false" />
+                    <ImageView
+                        android:id="@id/img_copy_translated"
+                        android:background="@drawable/effect_view_click_radius"
+                        android:padding="4.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/ic_copy_new" />
+                </RelativeLayout>
+                <ImageView
+                    android:id="@id/tv_clickWord"
+                    android:background="@drawable/effect_view_click_radius"
+                    android:padding="4.0dip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_dictionary_new"
+                    android:layout_weight="1.0" />
+                <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseTranslation
+                    android:id="@id/result_windown_view_wct"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    app:isShowFromService="true"
+                    app:isShowFromServiceFull="false" />
+                <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseLanguage
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@id/widget_result_region_wcl"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="6.0" />
+            </com.recognize_text.translate.screen.domain.widgets.otherWidget.TouchLinerLayout>
+            <ImageView
+                android:id="@id/img_tramanhinh_cancel"
+                android:background="@drawable/effect_view_click_radius"
+                android:padding="5.0dip"
+                android:layout_width="30.0dip"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_close_new" />
+        </LinearLayout>
+        <View
+            android:background="@color/cl_underline"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip" />
+        <com.bskim.maxheightscrollview.widgets.MaxHeightScrollView
+            android:id="@id/mhs_edt_en_dectect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            app:maxHeight="200.0dip">
+            <EditText
+                android:textSize="14.0dip"
+                android:textColor="@color/cl_text1"
+                android:id="@id/tv_en_detect"
+                android:background="@color/cl_background_white_grayB"
+                android:focusable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginBottom="3.0dip"
+                android:text="This is the original text"
+                android:includeFontPadding="false"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone"
+                android:textIsSelectable="false" />
+        </com.bskim.maxheightscrollview.widgets.MaxHeightScrollView>
+        <com.bskim.maxheightscrollview.widgets.MaxHeightScrollView
+            android:id="@id/mhs_tv_en_dectect_click_word"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            app:maxHeight="200.0dip">
+            <TextView
+                android:textSize="14.0dip"
+                android:textColor="@color/cl_text1"
+                android:id="@id/tv_en_detect_click_word"
+                android:background="@color/cl_background_white_grayB"
+                android:focusable="true"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginBottom="3.0dip"
+                android:text=""
+                android:includeFontPadding="false"
+                android:textIsSelectable="false" />
+        </com.bskim.maxheightscrollview.widgets.MaxHeightScrollView>
+        <View
+            android:id="@id/result_translate_v_underline"
+            android:background="@color/cl_underline"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <com.bskim.maxheightscrollview.widgets.MaxHeightScrollView
+            android:id="@id/mhs_tv_vi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            app:maxHeight="200.0dip">
+            <TextView
+                android:textSize="14.0dip"
+                android:textColor="@color/cl_text1"
+                android:id="@id/tv_detect_vi"
+                android:background="@color/cl_background_white_grayB"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginBottom="3.0dip"
+                android:text="This is the translated text"
+                android:includeFontPadding="false" />
+        </com.bskim.maxheightscrollview.widgets.MaxHeightScrollView>
+    </LinearLayout>
+</LinearLayout>

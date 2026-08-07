@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/rootView"
+    android:background="@color/cl_background_white_black"
+    android:paddingTop="25.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@id/dialog_suggest_app_ll_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10.0dip"
+        android:layoutDirection="ltr">
+        <TextView
+            android:theme="@style/fontBold"
+            android:textSize="30.0dip"
+            android:textColor="@color/cl_text1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tutorial" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="20.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip">
+                    <TextView
+                        android:theme="@style/fontSemi"
+                        android:textSize="16.0dip"
+                        android:textColor="@color/cl_text1"
+                        android:id="@id/dialog_suggest_app_tv_detail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tutorial_tap" />
+                    <FrameLayout
+                        android:layout_gravity="center"
+                        android:id="@id/dialog_tutorial_container_video"
+                        android:background="@drawable/bg_contain_video"
+                        android:paddingTop="5.0dip"
+                        android:paddingBottom="5.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180.0dip"
+                        android:layout_marginLeft="25.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:layout_marginRight="25.0dip"
+                        android:layout_marginBottom="8.0dip"
+                        android:elevation="1.0dip">
+                        <androidx.media3.ui.PlayerView
+                            android:layout_gravity="center"
+                            android:id="@id/dialog_tutorial_playerView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            app:resize_mode="fixed_height"
+                            app:surface_type="texture_view"
+                            app:use_controller="false" />
+                        <ImageView
+                            android:id="@id/dialog_tutorial_imgPoster"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/tos_poster_fullscreen" />
+                    </FrameLayout>
+                    <TextView
+                        android:theme="@style/fontSemi"
+                        android:textSize="14.0dip"
+                        android:textColor="@color/cl_text1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15.0dip"
+                        android:text="@string/tutorial_tap_drag" />
+                    <View
+                        android:background="@color/cl_underline"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_marginTop="15.0dip" />
+                    <TextView
+                        android:theme="@style/fontSemi"
+                        android:textSize="16.0dip"
+                        android:textColor="@color/cl_text1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20.0dip"
+                        android:text="@string/tutorial_long_press" />
+                    <FrameLayout
+                        android:layout_gravity="center"
+                        android:id="@id/dialog_tutorial_container_video2"
+                        android:background="@drawable/bg_contain_video"
+                        android:paddingTop="5.0dip"
+                        android:paddingBottom="5.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180.0dip"
+                        android:layout_marginLeft="25.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:layout_marginRight="25.0dip"
+                        android:elevation="1.0dip">
+                        <androidx.media3.ui.PlayerView
+                            android:layout_gravity="center"
+                            android:id="@id/dialog_tutorial_playerView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            app:resize_mode="fixed_height"
+                            app:surface_type="texture_view"
+                            app:use_controller="false" />
+                        <ImageView
+                            android:id="@id/dialog_tutorial_imgPoster2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/tos_poster_open_menu" />
+                    </FrameLayout>
+                    <View
+                        android:background="@color/cl_underline"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_marginTop="15.0dip" />
+                    <TextView
+                        android:theme="@style/fontSemi"
+                        android:textSize="14.0dip"
+                        android:textColor="@color/cl_text1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15.0dip"
+                        android:text="@string/you_can_change_the_action" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <ImageView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/dialog_tutorial_iv_close"
+        android:padding="9.0dip"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginRight="10.0dip"
+        android:foreground="@drawable/fg_efftect_circle"
+        android:src="@drawable/ic_close_gray"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

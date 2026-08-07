@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/item_other_apps_ll_root"
+    android:background="@drawable/effect_view_click_radius"
+    android:paddingTop="10.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@id/item_other_apps_iv_app_icon"
+                android:background="@drawable/bg_radius_imageview"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip" />
+            <TextView
+                android:textSize="11.0dip"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/yellow"
+                android:layout_width="18.0dip"
+                android:layout_height="18.0dip"
+                android:layout_marginLeft="34.0dip"
+                android:layout_marginTop="22.0dip"
+                android:text="Ad" />
+        </RelativeLayout>
+        <TextView
+            android:theme="@style/fontSemi"
+            android:textSize="16.0dip"
+            android:textColor="@color/cl_text1"
+            android:id="@id/item_other_apps_tv_app_name"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="2.0dip"
+            android:text="Free Translate, Voice, Camera, Image"
+            android:layout_weight="1.0" />
+        <ImageView
+            android:id="@id/item_other_apps_iv_show_more"
+            android:padding="10.0dip"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:src="@drawable/more"
+            android:rotation="0.0" />
+    </LinearLayout>
+    <TextView
+        android:textSize="15.0dip"
+        android:textColor="@color/cl_text2"
+        android:gravity="start|center"
+        android:id="@id/item_other_apps_tv_detail"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="- Free Translate, Voice, Camera, Image\n- Học từ vựng tiếng Anh, 100 Từ Vựng tiếng anh" />
+    <View
+        android:background="@color/cl_underline"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="10.0dip" />
+</LinearLayout>

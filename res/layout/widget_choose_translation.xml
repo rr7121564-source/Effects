@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/wct_ll_container_text_translation_draw"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:theme="@style/fontSemi"
+                android:textSize="15.0dip"
+                android:textColor="@color/cl_text1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/wct_tv"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="G"
+                android:includeFontPadding="false"
+                android:layout_weight="1.0" />
+            <ImageView
+                android:layout_gravity="center"
+                android:paddingRight="1.0dip"
+                android:layout_width="8.0dip"
+                android:layout_height="8.0dip"
+                android:src="@drawable/ic_more_down" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/wct_ll_container_text_translation_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:theme="@style/fontBold"
+                android:textSize="18.0dip"
+                android:textColor="#ffffffff"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/wct_tv2"
+                android:paddingLeft="3.5dip"
+                android:paddingRight="0.5dip"
+                android:layout_width="wrap_content"
+                android:layout_height="23.0dip"
+                android:layout_marginTop="-1.0dip"
+                android:text="G"
+                android:includeFontPadding="false" />
+            <ImageView
+                android:layout_gravity="center|left"
+                android:paddingRight="1.5dip"
+                android:layout_width="7.0dip"
+                android:layout_height="23.0dip"
+                android:src="@drawable/ic_more_down_white_plus" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@id/wct_rl_container_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.CustomSpinner
+                android:id="@id/wct_spinner"
+                android:background="@drawable/bg_language_spinner"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:foreground="@drawable/fg_efftect_9"
+                android:popupBackground="@color/cl_background_white_black" />
+            <ImageView
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/ic_more_down"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

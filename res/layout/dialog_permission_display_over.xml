@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@id/dialog_permission_ll_root"
+    android:background="@drawable/bg_dialog_center"
+    android:paddingTop="20.0dip"
+    android:paddingBottom="20.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20.0dip"
+    android:layout_marginRight="20.0dip"
+    android:layoutDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:theme="@style/fontBold"
+        android:textSize="23.5dip"
+        android:textColor="@color/cl_text1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/permission_required"
+        android:includeFontPadding="false" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip">
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@id/dialog_display_over_container_video"
+            android:background="@drawable/bg_contain_video"
+            android:padding="2.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="100.0dip"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginTop="15.0dip"
+            android:layout_marginRight="25.0dip">
+            <androidx.media3.ui.PlayerView
+                android:id="@id/dialog_display_over_playerView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:resize_mode="fit"
+                app:surface_type="texture_view"
+                app:use_controller="false" />
+            <ImageView
+                android:id="@id/dialog_display_over_imgPoster"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tos_poster_tutorial_display_top" />
+        </FrameLayout>
+        <TextView
+            android:textSize="16.0dip"
+            android:textColor="@color/cl_text1"
+            android:id="@id/dialog_permission_tv_detail"
+            android:paddingLeft="25.0dip"
+            android:paddingRight="25.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/permission_display_over_new" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip">
+            <TextView
+                android:theme="@style/fontSemi"
+                android:textSize="17.0dip"
+                android:textColor="@color/cl_text2"
+                android:gravity="center|left"
+                android:id="@id/dialog_permission_tv_cancel"
+                android:background="@drawable/bg_button_cancel"
+                android:paddingLeft="25.0dip"
+                android:paddingTop="6.0dip"
+                android:paddingRight="25.0dip"
+                android:paddingBottom="6.0dip"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:foreground="@drawable/fg_efftect_20"
+                android:text="@string/cancel"
+                android:includeFontPadding="false" />
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="1.0dip"
+                android:layout_weight="1.0" />
+            <TextView
+                android:theme="@style/fontSemi"
+                android:textSize="17.0dip"
+                android:textColor="@color/white"
+                android:gravity="center|right"
+                android:id="@id/dialog_permission_tv_accept"
+                android:background="@drawable/bg_round_20_blue"
+                android:paddingLeft="25.0dip"
+                android:paddingTop="6.0dip"
+                android:paddingRight="25.0dip"
+                android:paddingBottom="6.0dip"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:foreground="@drawable/fg_efftect_20"
+                android:text="@string/accept"
+                android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

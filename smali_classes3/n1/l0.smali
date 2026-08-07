@@ -1,0 +1,2 @@
+.class public abstract synthetic Ln1/l0;
+.super Ljava/lang/Object;

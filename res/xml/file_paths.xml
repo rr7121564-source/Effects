@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="my_images"
+        path="Android/data/com.recognize_text.translate.screen/files/Pictures" />
+    <external-path
+        name="my_documents"
+        path="Android/data/com.recognize_text.translate.screen/files/Documents" />
+</paths>

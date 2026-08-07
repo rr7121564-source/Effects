@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/cl_button_camera_voice" />
+    <corners
+        android:radius="9.0dip" />
+    <stroke
+        android:width="0.9dip"
+        android:color="@color/cl_border_button" />
+</shape>

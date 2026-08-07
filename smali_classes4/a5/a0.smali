@@ -1,0 +1,419 @@
+.class public La5/a0;
+.super Landroid/app/Dialog;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        La5/a0$a;
+    }
+.end annotation
+
+
+# instance fields
+.field private b:La5/a0$a;
+
+.field private c:Landroidx/recyclerview/widget/RecyclerView;
+
+.field private d:La5/w;
+
+.field f:I
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;ILa5/a0$a;)V
+    .locals 4
+
+    const v0, 0x7f14000b
+
+    invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
+
+    const/4 p1, 0x1
+
+    invoke-virtual {p0, p1}, Landroid/app/Dialog;->requestWindowFeature(I)Z
+
+    const v0, 0x7f0d003c
+
+    invoke-virtual {p0, v0}, Landroid/app/Dialog;->setContentView(I)V
+
+    :try_start_0
+    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    new-instance v1, Landroid/graphics/drawable/ColorDrawable;
+
+    const/4 v2, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, v2}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    invoke-virtual {v0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object v1
+
+    const v3, 0x7f14013c
+
+    iput v3, v1, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
+
+    const/high16 v3, 0x3f000000    # 0.5f
+
+    iput v3, v1, Landroid/view/WindowManager$LayoutParams;->dimAmount:F
+
+    const/4 v3, -0x1
+
+    iput v3, v1, Landroid/view/WindowManager$LayoutParams;->width:I
+
+    iput v3, v1, Landroid/view/WindowManager$LayoutParams;->height:I
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
+
+    invoke-static {v0, v2}, Landroidx/core/view/WindowCompat;->setDecorFitsSystemWindows(Landroid/view/Window;Z)V
+
+    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v1
+
+    iget v1, v1, Landroid/content/res/Configuration;->uiMode:I
+
+    and-int/lit8 v1, v1, 0x30
+
+    const/16 v3, 0x20
+
+    if-ne v1, v3, :cond_0
+
+    move v2, p1
+
+    :cond_0
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroidx/core/view/WindowCompat;->getInsetsController(Landroid/view/Window;Landroid/view/View;)Landroidx/core/view/WindowInsetsControllerCompat;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    xor-int/lit8 v1, v2, 0x1
+
+    invoke-virtual {v0, v1}, Landroidx/core/view/WindowInsetsControllerCompat;->setAppearanceLightStatusBars(Z)V
+
+    xor-int/2addr p1, v2
+
+    invoke-virtual {v0, p1}, Landroidx/core/view/WindowInsetsControllerCompat;->setAppearanceLightNavigationBars(Z)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :cond_1
+    const p1, 0x7f0a0110
+
+    invoke-virtual {p0, p1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    invoke-static {p1}, Li5/k;->n0(Landroid/view/View;)V
+
+    iput-object p3, p0, La5/a0;->b:La5/a0$a;
+
+    iput p2, p0, La5/a0;->f:I
+
+    invoke-virtual {p0}, La5/a0;->e()V
+
+    return-void
+.end method
+
+.method public static synthetic a(La5/a0;Landroid/view/View;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, La5/a0;->g(Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public static synthetic b(La5/a0;Landroid/view/View;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, La5/a0;->f(Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public static synthetic c(La5/a0;Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
+    .locals 0
+
+    invoke-direct {p0, p1, p2, p3}, La5/a0;->h(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private synthetic f(Landroid/view/View;)V
+    .locals 1
+
+    invoke-virtual {p0}, La5/a0;->d()V
+
+    iget-object p1, p0, La5/a0;->b:La5/a0$a;
+
+    if-eqz p1, :cond_0
+
+    invoke-interface {p1}, La5/a0$a;->a()V
+
+    :cond_0
+    invoke-static {}, Lu8/c;->c()Lu8/c;
+
+    move-result-object p1
+
+    new-instance v0, Lh5/c;
+
+    invoke-direct {v0}, Lh5/c;-><init>()V
+
+    invoke-virtual {p1, v0}, Lu8/c;->k(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method private synthetic g(Landroid/view/View;)V
+    .locals 0
+
+    invoke-virtual {p0}, La5/a0;->d()V
+
+    iget-object p1, p0, La5/a0;->b:La5/a0$a;
+
+    if-eqz p1, :cond_0
+
+    invoke-interface {p1}, La5/a0$a;->a()V
+
+    :cond_0
+    return-void
+.end method
+
+.method private synthetic h(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
+    .locals 0
+
+    const/4 p1, 0x4
+
+    if-ne p2, p1, :cond_1
+
+    invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
+
+    move-result p1
+
+    const/4 p2, 0x1
+
+    if-ne p1, p2, :cond_1
+
+    invoke-virtual {p0}, La5/a0;->d()V
+
+    iget-object p1, p0, La5/a0;->b:La5/a0$a;
+
+    if-eqz p1, :cond_0
+
+    invoke-interface {p1}, La5/a0$a;->a()V
+
+    :cond_0
+    return p2
+
+    :cond_1
+    const/4 p1, 0x1
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+
+# virtual methods
+.method public d()V
+    .locals 1
+
+    :try_start_0
+    invoke-virtual {p0}, Landroid/app/Dialog;->isShowing()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :cond_0
+    return-void
+.end method
+
+.method public e()V
+    .locals 4
+
+    const v0, 0x7f0a0115
+
+    invoke-virtual {p0, v0}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    const v1, 0x7f0a0113
+
+    invoke-virtual {p0, v1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/widget/TextView;
+
+    const v2, 0x7f0a0116
+
+    invoke-virtual {p0, v2}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    const v3, 0x7f0a0112
+
+    invoke-virtual {p0, v3}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Landroidx/recyclerview/widget/RecyclerView;
+
+    iput-object v3, p0, La5/a0;->c:Landroidx/recyclerview/widget/RecyclerView;
+
+    new-instance v3, La5/x;
+
+    invoke-direct {v3, p0}, La5/x;-><init>(La5/a0;)V
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    const v3, 0x7f13005a
+
+    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    new-instance v1, La5/y;
+
+    invoke-direct {v1, p0}, La5/y;-><init>(La5/a0;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    new-instance v0, La5/w;
+
+    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-static {v2}, Li5/k;->x(Landroid/content/Context;)Ljava/util/List;
+
+    move-result-object v2
+
+    iget v3, p0, La5/a0;->f:I
+
+    invoke-direct {v0, v1, v2, v3}, La5/w;-><init>(Landroid/content/Context;Ljava/util/List;I)V
+
+    iput-object v0, p0, La5/a0;->d:La5/w;
+
+    iget-object v1, p0, La5/a0;->b:La5/a0$a;
+
+    invoke-virtual {v0, v1}, La5/w;->e(La5/a0$a;)V
+
+    new-instance v0, Landroidx/recyclerview/widget/LinearLayoutManager;
+
+    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x1
+
+    const/4 v3, 0x0
+
+    invoke-direct {v0, v1, v2, v3}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(Landroid/content/Context;IZ)V
+
+    iget-object v1, p0, La5/a0;->c:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
+
+    iget-object v0, p0, La5/a0;->c:Landroidx/recyclerview/widget/RecyclerView;
+
+    iget-object v1, p0, La5/a0;->d:La5/w;
+
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
+
+    iget-object v0, p0, La5/a0;->d:La5/w;
+
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyDataSetChanged()V
+
+    iget-object v0, p0, La5/a0;->c:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {v0, v3}, Landroidx/recyclerview/widget/RecyclerView;->setNestedScrollingEnabled(Z)V
+
+    new-instance v0, La5/z;
+
+    invoke-direct {v0, p0}, La5/z;-><init>(La5/a0;)V
+
+    invoke-virtual {p0, v0}, Landroid/app/Dialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
+
+    return-void
+.end method
+
+.method public i()V
+    .locals 1
+
+    :try_start_0
+    invoke-virtual {p0}, Landroid/app/Dialog;->isShowing()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p0}, Landroid/app/Dialog;->show()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :cond_0
+    return-void
+.end method
+
+.method public j(I)V
+    .locals 1
+
+    iget-object v0, p0, La5/a0;->d:La5/w;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1}, La5/w;->d(I)V
+
+    iget-object p1, p0, La5/a0;->d:La5/w;
+
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyDataSetChanged()V
+
+    :cond_0
+    return-void
+.end method

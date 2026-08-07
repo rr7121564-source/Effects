@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/rootView"
+    android:background="@color/cl_background_grayW_black"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetBgDemo
+            android:id="@id/dialog_setting_full_wbgd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20.0dip"
+            android:textColor="@color/white"
+            android:id="@id/ac_setting_full_tv_demo"
+            android:background="@color/black"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90.0dip"
+            android:text="This is sample text\nThis is sample text 2"
+            android:includeFontPadding="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:paddingHorizontal="5.0dip" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ac_setting_full_ll_container_line"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true">
+            <TextView
+                android:textSize="20.0dip"
+                android:textColor="@color/white"
+                android:id="@id/ac_setting_full_tv_demo_line1"
+                android:background="@color/black"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is sample text"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="5.0dip" />
+            <TextView
+                android:textSize="20.0dip"
+                android:textColor="@color/white"
+                android:id="@id/ac_setting_full_tv_demo_line2"
+                android:background="@color/black"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:text="This is sample text 2"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="5.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetSwitch
+                android:id="@id/dialog_setting_full_ws_display_by_line"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                app:titleText="@string/display_by_line"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseColor
+                android:id="@id/ac_setting_full_wcc_text_color"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/text_color_new" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseFont
+                android:id="@id/ac_setting_full_wcf_text_font"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/font" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseColor
+                android:id="@id/ac_setting_full_wcc_bg_color"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/bg_color" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseValue
+                android:id="@id/ac_setting_full_wcv_bg_trans"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/bg_trans"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetSwitch
+                android:id="@id/ac_setting_full_ws_bg_stroke"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/bg_border" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetSwitch
+                android:id="@id/ac_setting_full_ws_bg_auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:detailText="@string/auto_bg_detail"
+                app:titleText="@string/smrt_bg_color" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetSwitch
+                android:id="@id/dialog_setting_manga_ws_upcase"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/upcase_text"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetSwitch
+                android:id="@id/dialog_setting_manga_ws_center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/center_text" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetSwitch
+                android:id="@id/dialog_setting_manga_ws_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:layout_marginBottom="20.0dip"
+                app:detailText="@string/vertical_text_new_detail"
+                app:titleText="@string/vertical_text_new"
+                app:vipVisibility="gone" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

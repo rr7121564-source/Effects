@@ -1,0 +1,49 @@
+.class public abstract Lp0/l$a;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lp0/l;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract a()Lp0/l;
+.end method
+
+.method public abstract b(Ljava/lang/Integer;)Lp0/l$a;
+.end method
+
+.method public abstract c(J)Lp0/l$a;
+.end method
+
+.method public abstract d(J)Lp0/l$a;
+.end method
+
+.method public abstract e(Lp0/o;)Lp0/l$a;
+.end method
+
+.method abstract f([B)Lp0/l$a;
+.end method
+
+.method abstract g(Ljava/lang/String;)Lp0/l$a;
+.end method
+
+.method public abstract h(J)Lp0/l$a;
+.end method

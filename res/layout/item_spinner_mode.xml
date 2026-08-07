@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:theme="@style/fontSemi"
+        android:textSize="15.0dip"
+        android:textColor="@color/cl_text1"
+        android:gravity="center_vertical"
+        android:id="@id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="28.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:text="Full Screen Mode"
+        android:singleLine="true"
+        android:includeFontPadding="false" />
+</LinearLayout>

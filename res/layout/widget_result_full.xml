@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layoutDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/container_widget_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/container_widget_ll_top_bar"
+        android:paddingTop="26.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@id/container_widget_iv_hide"
+            android:background="@drawable/bg_circle_black"
+            android:padding="8.5dip"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/ic_hide_svg"
+            android:alpha="0.5" />
+        <ImageView
+            android:id="@id/container_widget_iv_setting"
+            android:background="@drawable/bg_circle_black"
+            android:padding="9.5dip"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:src="@drawable/ic_settings_svg"
+            android:alpha="0.5" />
+        <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseTranslation
+            android:id="@id/container_widget_wct_translation"
+            android:background="@drawable/bg_circle_black"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:alpha="0.5"
+            app:isShowFromService="true"
+            app:isShowFromServiceFull="true" />
+    </LinearLayout>
+</RelativeLayout>

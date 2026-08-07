@@ -1,0 +1,25 @@
+.class public interface abstract Lcom/google/firebase/auth/internal/InternalAuthProvider;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/google/firebase/internal/InternalTokenProvider;
+
+
+# virtual methods
+.method public abstract addIdTokenListener(Lcom/google/firebase/auth/internal/IdTokenListener;)V
+.end method
+
+.method public abstract getAccessToken(Z)Lj3/j;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)",
+            "Lj3/j;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getUid()Ljava/lang/String;
+.end method
+
+.method public abstract removeIdTokenListener(Lcom/google/firebase/auth/internal/IdTokenListener;)V
+.end method

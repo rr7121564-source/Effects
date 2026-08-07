@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/rootView"
+    android:background="@color/cl_background_grayW_black"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetBgDemo
+            android:id="@id/dialog_setting_full_wbgd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <com.recognize_text.translate.screen.domain.widgets.FloatingIconView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseIcon
+                android:id="@id/dialog_setting_icon_wci_icon_floating"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                app:titleText="@string/choose_icon_floating" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseColor
+                android:id="@id/dialog_setting_icon_wcl_icon_color"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/icon_color"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseValue
+                android:id="@id/dialog_setting_icon_wcv_icon_trans"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/icon_trans"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseValue
+                android:id="@id/dialog_setting_icon_wcv_icon_size"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/icon_size"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseAction
+                android:id="@id/ac_setting_icon_wca_long"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/action_long"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseAction
+                android:id="@id/ac_setting_icon_wca_double"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:detailText="@string/double_tap_delay_tap"
+                app:titleText="@string/action_double"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetSwitch
+                android:id="@id/ac_setting_icon_ws_auto_dim"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/auto_dim"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetSwitch
+                android:id="@id/ac_setting_icon_ws_auto_move"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:detailText="@string/auto_move_detail"
+                app:titleText="@string/auto_move"
+                app:vipVisibility="gone" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/bg_round_12_yellow"
+                android:padding="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginBottom="20.0dip">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:src="@drawable/ic_warning" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:theme="@style/fontSemi"
+                        android:textSize="12.5dip"
+                        android:textColor="@color/cl_text_warning"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ic_floating_problem"
+                        android:includeFontPadding="false" />
+                    <TextView
+                        android:theme="@style/fontSemi"
+                        android:textSize="14.0dip"
+                        android:textColor="@color/blue"
+                        android:id="@id/dialog_setting_icon_tv_detail_problem"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="@drawable/fg_efftect_12"
+                        android:text="@string/ic_floating_detail"
+                        android:includeFontPadding="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

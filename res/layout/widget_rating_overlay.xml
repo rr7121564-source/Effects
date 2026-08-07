@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog_center"
+        android:layout_width="290.0dip"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bg_round_yellow"
+            android:paddingBottom="15.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="130.0dip">
+            <FrameLayout
+                android:background="@drawable/bg_circle_rating"
+                android:padding="15.0dip"
+                android:layout_width="65.0dip"
+                android:layout_height="65.0dip"
+                android:layout_marginTop="20.0dip"
+                android:elevation="5.0dip">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_star_rating" />
+            </FrameLayout>
+            <TextView
+                android:theme="@style/fontSemi"
+                android:textSize="15.0dip"
+                android:textColor="@color/cl_rating_app_name"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/app_name" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:paddingBottom="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:theme="@style/fontBold"
+                android:textSize="17.0dip"
+                android:textColor="@color/cl_text1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:text="@string/rating_detail_1" />
+            <TextView
+                android:theme="@style/fontMedium"
+                android:textSize="14.0dip"
+                android:textColor="@color/cl_text2"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:text="@string/rating_detail_2" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginRight="50.0dip">
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/ic_star_svg" />
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0" />
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/ic_star_svg" />
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0" />
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/ic_star_svg" />
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0" />
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/ic_star_svg" />
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0" />
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/ic_star_svg" />
+            </LinearLayout>
+            <TextView
+                android:theme="@style/fontSemi"
+                android:textSize="16.0dip"
+                android:textColor="@color/cl_white_sameWhite"
+                android:gravity="center"
+                android:id="@id/widget_rating_overlay_tv_rate_now"
+                android:background="@drawable/bg_round_20_orange"
+                android:paddingLeft="15.0dip"
+                android:paddingTop="6.0dip"
+                android:paddingRight="15.0dip"
+                android:paddingBottom="6.0dip"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="25.0dip"
+                android:layout_marginRight="10.0dip"
+                android:foreground="@drawable/fg_efftect_20"
+                android:text="@string/rate_app"
+                android:includeFontPadding="false"
+                android:elevation="3.0dip" />
+            <TextView
+                android:theme="@style/fontSemi"
+                android:textSize="15.0dip"
+                android:textColor="@color/cl_text2"
+                android:gravity="center"
+                android:id="@id/widget_rating_overlay_tv_no_thanks"
+                android:paddingLeft="15.0dip"
+                android:paddingTop="4.0dip"
+                android:paddingRight="15.0dip"
+                android:paddingBottom="4.0dip"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_marginRight="10.0dip"
+                android:foreground="@drawable/fg_efftect_20"
+                android:text="@string/later"
+                android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

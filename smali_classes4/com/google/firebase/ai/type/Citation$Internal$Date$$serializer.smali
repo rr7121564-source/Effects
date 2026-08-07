@@ -1,0 +1,349 @@
+.class public final Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lo8/l0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/firebase/ai/type/Citation$Internal$Date;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "$serializer"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lo8/l0;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final INSTANCE:Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;
+
+.field private static final synthetic descriptor:Lo8/w1;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    new-instance v0, Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;
+
+    invoke-direct {v0}, Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;-><init>()V
+
+    sput-object v0, Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;->INSTANCE:Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;
+
+    new-instance v1, Lo8/w1;
+
+    const-string v2, "com.google.firebase.ai.type.Citation.Internal.Date"
+
+    const/4 v3, 0x3
+
+    invoke-direct {v1, v2, v0, v3}, Lo8/w1;-><init>(Ljava/lang/String;Lo8/l0;I)V
+
+    const-string v0, "year"
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v0, v2}, Lo8/w1;->k(Ljava/lang/String;Z)V
+
+    const-string v0, "month"
+
+    invoke-virtual {v1, v0, v2}, Lo8/w1;->k(Ljava/lang/String;Z)V
+
+    const-string v0, "day"
+
+    invoke-virtual {v1, v0, v2}, Lo8/w1;->k(Ljava/lang/String;Z)V
+
+    sput-object v1, Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;->descriptor:Lo8/w1;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public childSerializers()[Lk8/b;
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()[",
+            "Lk8/b;"
+        }
+    .end annotation
+
+    sget-object v0, Lo8/u0;->a:Lo8/u0;
+
+    invoke-static {v0}, Ll8/a;->u(Lk8/b;)Lk8/b;
+
+    move-result-object v1
+
+    invoke-static {v0}, Ll8/a;->u(Lk8/b;)Lk8/b;
+
+    move-result-object v2
+
+    invoke-static {v0}, Ll8/a;->u(Lk8/b;)Lk8/b;
+
+    move-result-object v0
+
+    const/4 v3, 0x3
+
+    new-array v3, v3, [Lk8/b;
+
+    const/4 v4, 0x1
+
+    const/4 v4, 0x0
+
+    aput-object v1, v3, v4
+
+    const/4 v1, 0x1
+
+    aput-object v2, v3, v1
+
+    const/4 v1, 0x2
+
+    aput-object v0, v3, v1
+
+    return-object v3
+.end method
+
+.method public deserialize(Ln8/e;)Lcom/google/firebase/ai/type/Citation$Internal$Date;
+    .locals 11
+
+    const-string v0, "decoder"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;->getDescriptor()Lm8/f;
+
+    move-result-object v0
+
+    invoke-interface {p1, v0}, Ln8/e;->d(Lm8/f;)Ln8/c;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ln8/c;->l()Z
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x1
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x1
+
+    const/4 v5, 0x0
+
+    if-eqz v1, :cond_0
+
+    sget-object v1, Lo8/u0;->a:Lo8/u0;
+
+    invoke-interface {p1, v0, v4, v1, v5}, Ln8/c;->m(Lm8/f;ILk8/a;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-interface {p1, v0, v3, v1, v5}, Ln8/c;->m(Lm8/f;ILk8/a;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-interface {p1, v0, v2, v1, v5}, Ln8/c;->m(Lm8/f;ILk8/a;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    const/4 v2, 0x7
+
+    move-object v6, v3
+
+    move v3, v2
+
+    goto :goto_1
+
+    :cond_0
+    move v8, v3
+
+    move v1, v4
+
+    move-object v6, v5
+
+    move-object v7, v6
+
+    :goto_0
+    if-eqz v8, :cond_5
+
+    invoke-interface {p1, v0}, Ln8/c;->C(Lm8/f;)I
+
+    move-result v9
+
+    const/4 v10, -0x1
+
+    if-eq v9, v10, :cond_4
+
+    if-eqz v9, :cond_3
+
+    if-eq v9, v3, :cond_2
+
+    if-ne v9, v2, :cond_1
+
+    sget-object v9, Lo8/u0;->a:Lo8/u0;
+
+    invoke-interface {p1, v0, v2, v9, v7}, Ln8/c;->m(Lm8/f;ILk8/a;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    or-int/lit8 v1, v1, 0x4
+
+    goto :goto_0
+
+    :cond_1
+    new-instance p1, Lkotlinx/serialization/UnknownFieldException;
+
+    invoke-direct {p1, v9}, Lkotlinx/serialization/UnknownFieldException;-><init>(I)V
+
+    throw p1
+
+    :cond_2
+    sget-object v9, Lo8/u0;->a:Lo8/u0;
+
+    invoke-interface {p1, v0, v3, v9, v6}, Ln8/c;->m(Lm8/f;ILk8/a;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    or-int/lit8 v1, v1, 0x2
+
+    goto :goto_0
+
+    :cond_3
+    sget-object v9, Lo8/u0;->a:Lo8/u0;
+
+    invoke-interface {p1, v0, v4, v9, v5}, Ln8/c;->m(Lm8/f;ILk8/a;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    or-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_4
+    move v8, v4
+
+    goto :goto_0
+
+    :cond_5
+    move v3, v1
+
+    move-object v4, v5
+
+    move-object v1, v7
+
+    :goto_1
+    invoke-interface {p1, v0}, Ln8/c;->b(Lm8/f;)V
+
+    new-instance p1, Lcom/google/firebase/ai/type/Citation$Internal$Date;
+
+    check-cast v4, Ljava/lang/Integer;
+
+    move-object v5, v6
+
+    check-cast v5, Ljava/lang/Integer;
+
+    move-object v6, v1
+
+    check-cast v6, Ljava/lang/Integer;
+
+    const/4 v7, 0x1
+
+    const/4 v7, 0x0
+
+    move-object v2, p1
+
+    invoke-direct/range {v2 .. v7}, Lcom/google/firebase/ai/type/Citation$Internal$Date;-><init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Lo8/g2;)V
+
+    return-object p1
+.end method
+
+.method public bridge synthetic deserialize(Ln8/e;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;->deserialize(Ln8/e;)Lcom/google/firebase/ai/type/Citation$Internal$Date;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getDescriptor()Lm8/f;
+    .locals 1
+
+    sget-object v0, Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;->descriptor:Lo8/w1;
+
+    return-object v0
+.end method
+
+.method public serialize(Ln8/f;Lcom/google/firebase/ai/type/Citation$Internal$Date;)V
+    .locals 1
+
+    const-string v0, "encoder"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "value"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/s;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;->getDescriptor()Lm8/f;
+
+    move-result-object v0
+
+    invoke-interface {p1, v0}, Ln8/f;->d(Lm8/f;)Ln8/d;
+
+    move-result-object p1
+
+    invoke-static {p2, p1, v0}, Lcom/google/firebase/ai/type/Citation$Internal$Date;->write$Self(Lcom/google/firebase/ai/type/Citation$Internal$Date;Ln8/d;Lm8/f;)V
+
+    invoke-interface {p1, v0}, Ln8/d;->b(Lm8/f;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic serialize(Ln8/f;Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p2, Lcom/google/firebase/ai/type/Citation$Internal$Date;
+
+    invoke-virtual {p0, p1, p2}, Lcom/google/firebase/ai/type/Citation$Internal$Date$$serializer;->serialize(Ln8/f;Lcom/google/firebase/ai/type/Citation$Internal$Date;)V
+
+    return-void
+.end method
+
+.method public typeParametersSerializers()[Lk8/b;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()[",
+            "Lk8/b;"
+        }
+    .end annotation
+
+    invoke-static {p0}, Lo8/l0$a;->a(Lo8/l0;)[Lk8/b;
+
+    move-result-object v0
+
+    return-object v0
+.end method

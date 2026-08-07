@@ -1,0 +1,117 @@
+.class public final Lo8/d0;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lk8/b;
+
+
+# static fields
+.field public static final a:Lo8/d0;
+
+.field private static final b:Lm8/f;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lo8/d0;
+
+    invoke-direct {v0}, Lo8/d0;-><init>()V
+
+    sput-object v0, Lo8/d0;->a:Lo8/d0;
+
+    new-instance v0, Lo8/c2;
+
+    const-string v1, "kotlin.time.Duration"
+
+    sget-object v2, Lm8/e$i;->a:Lm8/e$i;
+
+    invoke-direct {v0, v1, v2}, Lo8/c2;-><init>(Ljava/lang/String;Lm8/e;)V
+
+    sput-object v0, Lo8/d0;->b:Lm8/f;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ln8/e;)J
+    .locals 2
+
+    const-string v0, "decoder"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v0, Lx7/a;->c:Lx7/a$a;
+
+    invoke-interface {p1}, Ln8/e;->B()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Lx7/a$a;->c(Ljava/lang/String;)J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public b(Ln8/f;J)V
+    .locals 1
+
+    const-string v0, "encoder"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/s;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p2, p3}, Lx7/a;->L(J)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-interface {p1, p2}, Ln8/f;->E(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic deserialize(Ln8/e;)Ljava/lang/Object;
+    .locals 2
+
+    invoke-virtual {p0, p1}, Lo8/d0;->a(Ln8/e;)J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Lx7/a;->j(J)Lx7/a;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getDescriptor()Lm8/f;
+    .locals 1
+
+    sget-object v0, Lo8/d0;->b:Lm8/f;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic serialize(Ln8/f;Ljava/lang/Object;)V
+    .locals 2
+
+    check-cast p2, Lx7/a;
+
+    invoke-virtual {p2}, Lx7/a;->P()J
+
+    move-result-wide v0
+
+    invoke-virtual {p0, p1, v0, v1}, Lo8/d0;->b(Ln8/f;J)V
+
+    return-void
+.end method

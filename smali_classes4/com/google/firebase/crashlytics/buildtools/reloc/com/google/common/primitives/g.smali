@@ -1,0 +1,33 @@
+.class public final synthetic Lcom/google/firebase/crashlytics/buildtools/reloc/com/google/common/primitives/g;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/util/function/DoubleConsumer;
+
+
+# instance fields
+.field public final synthetic b:Lcom/google/firebase/crashlytics/buildtools/reloc/com/google/common/primitives/ImmutableDoubleArray$Builder;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/google/firebase/crashlytics/buildtools/reloc/com/google/common/primitives/ImmutableDoubleArray$Builder;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/firebase/crashlytics/buildtools/reloc/com/google/common/primitives/g;->b:Lcom/google/firebase/crashlytics/buildtools/reloc/com/google/common/primitives/ImmutableDoubleArray$Builder;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(D)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/firebase/crashlytics/buildtools/reloc/com/google/common/primitives/g;->b:Lcom/google/firebase/crashlytics/buildtools/reloc/com/google/common/primitives/ImmutableDoubleArray$Builder;
+
+    invoke-virtual {v0, p1, p2}, Lcom/google/firebase/crashlytics/buildtools/reloc/com/google/common/primitives/ImmutableDoubleArray$Builder;->add(D)Lcom/google/firebase/crashlytics/buildtools/reloc/com/google/common/primitives/ImmutableDoubleArray$Builder;
+
+    return-void
+.end method

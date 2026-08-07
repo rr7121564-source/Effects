@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/rootView"
+    android:background="@color/defaultColor"
+    android:paddingTop="25.0dip"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="@color/defaultColor"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip">
+        <TextView
+            android:theme="@style/fontBold"
+            android:textSize="18.299988dip"
+            android:textColor="@color/cl_white_sameWhite"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Word Translate"
+            android:includeFontPadding="false" />
+        <ImageView
+            android:id="@id/ac_word_translate_iv_back"
+            android:background="@drawable/effect_click_view"
+            android:padding="12.0dip"
+            android:layout_width="43.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/ic_back" />
+        <ImageView
+            android:id="@id/ac_word_translate_iv_settings"
+            android:background="@drawable/effect_click_view"
+            android:padding="8.0dip"
+            android:layout_width="43.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/ic_settings_white"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@id/activity_nghia_tl_sector"
+        android:background="@color/defaultColor"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        app:tabIndicatorColor="@color/cl_white_sameWhite"
+        app:tabIndicatorHeight="1.0dip"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/cl_white_sameWhite"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="#ffd1ddee" />
+    <View
+        android:background="@color/defaultColor"
+        android:layout_width="fill_parent"
+        android:layout_height="0.20000005dip" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@id/activity_nghia_vp_mean"
+        android:background="@color/cl_background_white_black"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:layout_weight="1.0" />
+</LinearLayout>

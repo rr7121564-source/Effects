@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/cl_background_white_black"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView
+        android:id="@id/fragment_cambride_mean_wv_mean"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-50.0dip" />
+    <TextView
+        android:textSize="19.0dip"
+        android:textColor="@color/cl_text1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/tv_no_internet"
+        android:background="@color/cl_background_white_black"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/no_internet" />
+    <ProgressBar
+        android:id="@id/fragment_bab_la_pb_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="4.0dip"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:layout_alignParentTop="true"
+        style="?android:progressBarStyleHorizontal" />
+</RelativeLayout>

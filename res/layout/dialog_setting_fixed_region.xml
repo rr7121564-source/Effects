@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/rootView"
+    android:background="@color/cl_background_grayW_black"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetBgDemo
+            android:id="@id/dialog_setting_fixed_region_wbgd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <com.recognize_text.translate.screen.domain.widgets.ResultFixedRegionView
+            android:id="@id/dialog_setting_fixed_region_result_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45.0dip"
+            android:layout_marginTop="90.0dip"
+            android:layout_marginRight="45.0dip"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseValue
+                android:id="@id/ac_setting_fixed_region_wcv_text_size"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                app:titleText="@string/text_size_new"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseColor
+                android:id="@id/ac_setting_fixed_region_wcc_text_color"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/text_color_new" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseFont
+                android:id="@id/ac_setting_fixed_region_wcf_text_font"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/font" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseColor
+                android:id="@id/ac_setting_fixed_region_wcc_bg_color"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/bg_color" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseValue
+                android:id="@id/ac_setting_fixed_region_wcv_bg_trans"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/bg_trans"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetSwitch
+                android:id="@id/dialog_setting_fixed_region_ws_center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/center_text"
+                app:vipVisibility="gone" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetSwitch
+                android:id="@id/dialog_setting_fixed_region_ws_hide_border"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                app:titleText="@string/hide_border" />
+            <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetSwitch
+                android:id="@id/dialog_setting_fixed_region_ws_speak_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:layout_marginBottom="20.0dip"
+                app:detailText="@string/speak_after_translation_detail"
+                app:titleText="@string/speak_after_translation"
+                app:vipVisibility="gone" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+.class interface abstract Landroidx/camera/view/ProcessCameraProviderWrapper;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract bindToLifecycle(Landroidx/lifecycle/LifecycleOwner;Landroidx/camera/core/CameraSelector;Landroidx/camera/core/UseCaseGroup;)Landroidx/camera/core/Camera;
+.end method
+
+.method public abstract getCameraInfo(Landroidx/camera/core/CameraSelector;)Landroidx/camera/core/CameraInfo;
+.end method
+
+.method public abstract hasCamera(Landroidx/camera/core/CameraSelector;)Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroidx/camera/core/CameraInfoUnavailableException;
+        }
+    .end annotation
+.end method
+
+.method public abstract shutdownAsync()Lcom/google/common/util/concurrent/m;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/util/concurrent/m;"
+        }
+    .end annotation
+.end method
+
+.method public varargs abstract unbind([Landroidx/camera/core/UseCase;)V
+.end method
+
+.method public abstract unbindAll()V
+.end method

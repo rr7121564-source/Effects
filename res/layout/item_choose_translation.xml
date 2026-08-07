@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/item_choose_font_ll_root"
+    android:background="@drawable/bg_round_12"
+    android:paddingTop="6.0dip"
+    android:paddingBottom="6.0dip"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15.0dip"
+    android:layout_marginTop="3.0dip"
+    android:layout_marginRight="15.0dip"
+    android:layout_marginBottom="5.0dip"
+    android:foreground="@drawable/fg_efftect_12"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40.0dip">
+        <TextView
+            android:textSize="18.0dip"
+            android:textColor="@color/cl_text1"
+            android:gravity="center_vertical"
+            android:id="@id/item_choose_font_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text=""
+            android:layout_marginStart="30.0dip"
+            android:layout_marginEnd="10.0dip" />
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/spn_translation_iv_vip"
+            android:layout_width="18.0dip"
+            android:layout_height="18.0dip"
+            android:layout_marginTop="2.0dip"
+            android:src="@drawable/ic_premium_no_bg"
+            android:layout_marginStart="15.0dip" />
+        <TextView
+            android:textSize="8.0dip"
+            android:textColor="#ffffaf3a"
+            android:layout_gravity="center"
+            android:id="@id/spn_translation_tv_tryAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:text="Free trial"
+            android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

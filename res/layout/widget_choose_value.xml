@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_round_12"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="55.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="10.0dip"
+        android:paddingBottom="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:theme="@style/fontSemi"
+                android:textSize="17.0dip"
+                android:textColor="@color/cl_text1"
+                android:id="@id/widget_choose_value_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="300.0dip"
+                android:text="Ẩn văn bản nguồn Ẩn văn bản nguồn  văn bản"
+                android:includeFontPadding="false" />
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@id/widget_choose_value_iv_vip"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginTop="2.0dip"
+                android:src="@drawable/ic_premium_no_bg"
+                android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10.0dip">
+            <SeekBar
+                android:theme="@style/MySeekBar"
+                android:id="@id/widget_choose_value_sb"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:layout_weight="1.0" />
+            <TextView
+                android:textSize="15.0dip"
+                android:textColor="@color/cl_text2"
+                android:gravity="end"
+                android:id="@id/widget_choose_value_tv_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5.0dip"
+                android:minWidth="40.0dip"
+                android:text="3"
+                android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

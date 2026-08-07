@@ -1,0 +1,13 @@
+.class public interface abstract Landroid/support/v4/media/session/b;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/media/session/b$a;
+    }
+.end annotation

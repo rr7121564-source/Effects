@@ -1,0 +1,67 @@
+.class public final Lt0/f$a;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lt0/f;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field private a:J
+
+.field private b:J
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-wide/16 v0, 0x0
+
+    iput-wide v0, p0, Lt0/f$a;->a:J
+
+    iput-wide v0, p0, Lt0/f$a;->b:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Lt0/f;
+    .locals 5
+
+    new-instance v0, Lt0/f;
+
+    iget-wide v1, p0, Lt0/f$a;->a:J
+
+    iget-wide v3, p0, Lt0/f$a;->b:J
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lt0/f;-><init>(JJ)V
+
+    return-object v0
+.end method
+
+.method public b(J)Lt0/f$a;
+    .locals 0
+
+    iput-wide p1, p0, Lt0/f$a;->b:J
+
+    return-object p0
+.end method
+
+.method public c(J)Lt0/f$a;
+    .locals 0
+
+    iput-wide p1, p0, Lt0/f$a;->a:J
+
+    return-object p0
+.end method

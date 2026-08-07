@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.recognize_text.translate.screen.domain.widgets.widget_main.WidgetChooseLanguage
+        android:id="@id/ac_transparent_wcl"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip" />
+</RelativeLayout>

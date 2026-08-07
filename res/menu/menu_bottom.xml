@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_tab_home"
+        android:id="@id/mn_home"
+        android:title="Home" />
+    <item
+        android:icon="@drawable/ic_tab_translate"
+        android:id="@id/mn_translate"
+        android:title="Translate" />
+    <item
+        android:icon="@drawable/ic_tab_more"
+        android:id="@id/mn_settings"
+        android:title="More" />
+</menu>
